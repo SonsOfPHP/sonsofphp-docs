@@ -24,8 +24,18 @@ extra:
           link: https://github.com/SonsOfPHP
           name: Sons of PHP on GitHub
 #nav:
-#    - Section:
-#        - section/index.md
-#        - Page 1: index.md
-#    - Another Section:
-#        - Page 1: index.md
+#    #- index.md
+#    - Clock:
+#        - clock/index.md
+#    - CQRS:
+#        - cqrs/index.md
+#    - Event Dispatcher:
+#        - event-dispatcher/index.md
+#    - Event Sourcing:
+#        - event-sourcing/index.md
+#    - Feature Toggle:
+#        - feature-toggle/index.md
+#    - JSON:
+#        - json/index.md
+#    - Money:
+#        - money/index.md
