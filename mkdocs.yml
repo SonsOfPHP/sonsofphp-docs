@@ -1,0 +1,31 @@
+site_name: Sons of PHP - Documentation
+site_url: https://docs.sonsofphp.com/
+copyright: Copyright &copy 2022 Sons of PHP
+repo_url: https://github.com/SonsOfPHP/sonsofphp
+repo_name: Mother Repository
+edit_uri: https://github.com/SonsOfPHP/sonsofphp-docs/edit/main/docs/
+theme:
+    name: material
+    features:
+        #- navigation.instant
+        #- navigation.tabs
+        #- navigation.sections
+        - navigation.top
+    icon:
+        repo: fontawesome/brands/github
+plugins:
+    - search
+extra:
+    generator: false
+    #version:
+    #    provider: mike
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/SonsOfPHP
+          name: Sons of PHP on GitHub
+#nav:
+#    - Section:
+#        - section/index.md
+#        - Page 1: index.md
+#    - Another Section:
+#        - Page 1: index.md
