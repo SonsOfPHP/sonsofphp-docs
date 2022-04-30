@@ -1,20 +1,28 @@
 site_name: Sons of PHP - Documentation
 site_url: https://docs.sonsofphp.com/
-copyright: Copyright &copy 2022 Sons of PHP
+site_author: Joshua Estes
+
 repo_url: https://github.com/SonsOfPHP/sonsofphp
 repo_name: Mother Repository
+
+copyright: Copyright &copy 2022 Sons of PHP
+
 edit_uri: https://github.com/SonsOfPHP/sonsofphp-docs/edit/main/docs/
+
 theme:
     name: material
     features:
         #- navigation.instant
-        #- navigation.tabs
+        - navigation.tabs
         #- navigation.sections
         - navigation.top
+        - navigation.indexes
     icon:
         repo: fontawesome/brands/github
 plugins:
     - search
+    #- minify:
+    #    minify_html: true
 extra:
     generator: false
     #version:
@@ -23,19 +31,24 @@ extra:
         - icon: fontawesome/brands/github
           link: https://github.com/SonsOfPHP
           name: Sons of PHP on GitHub
-#nav:
-#    #- index.md
-#    - Clock:
-#        - clock/index.md
-#    - CQRS:
-#        - cqrs/index.md
-#    - Event Dispatcher:
-#        - event-dispatcher/index.md
-#    - Event Sourcing:
-#        - event-sourcing/index.md
-#    - Feature Toggle:
-#        - feature-toggle/index.md
-#    - JSON:
-#        - json/index.md
-#    - Money:
-#        - money/index.md
+markdown_extensions:
+    - admonition
+    - meta
+    - pymdownx.highlight:
+        anchor_linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+
+nav:
+    - Home:
+        - index.md
+    - Components:
+        - components/index.md
+        - Clock: components/clock/index.md
+        - CQRS: components/cqrs/index.md
+        - Event Dispatcher: components/event-dispatcher/index.md
+        - Event Sourcing: components/event-sourcing/index.md
+        - Feature Toggle: components/feature-toggle/index.md
+        - JSON: components/json/index.md
+        - Money: components/money/index.md
