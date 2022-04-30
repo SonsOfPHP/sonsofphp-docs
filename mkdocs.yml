@@ -17,12 +17,15 @@ theme:
         #- navigation.sections
         - navigation.top
         - navigation.indexes
+        - content.code.annotate
     icon:
         repo: fontawesome/brands/github
+
 plugins:
     - search
     #- minify:
     #    minify_html: true
+
 extra:
     generator: false
     #version:
@@ -31,14 +34,14 @@ extra:
         - icon: fontawesome/brands/github
           link: https://github.com/SonsOfPHP
           name: Sons of PHP on GitHub
+
 markdown_extensions:
     - admonition
     - meta
-    - pymdownx.highlight:
-        anchor_linenums: true
+    - pymdownx.highlight
     - pymdownx.inlinehilite
-    - pymdownx.snippets
     - pymdownx.superfences
+
 
 nav:
     - Home:
