@@ -54,4 +54,8 @@ nav:
         - Event Sourcing: components/event-sourcing/index.md
         - Feature Toggle: components/feature-toggle/index.md
         - JSON: components/json/index.md
-        - Money: components/money/index.md
+        - Money:
+            - components/money/index.md
+            - Currency Provider: components/money/currency-provider.md
+            - Operators: components/money/operators.md
+            - Queries: components/money/queries.md

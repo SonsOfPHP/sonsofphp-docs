@@ -1,5 +1,5 @@
 ---
-title: Money - Overview
+title: Money
 ---
 
 The Money component was inspired by JSR 354 along with a few other ideas. It is
@@ -62,35 +62,6 @@ use SonsOfPHP\Component\Money\Currency;
 $currency = new Currency('USD');
 // OR
 $currency = Currency::USD();
-```
-
-## Operators
-
-Operators allow you to change something about the Money and will return a new
-instance of the Money. For example, the methods: add, subtract, multiply, and
-divide on the `Money` class are all MoneyOperators.
-
-You can create your own Money Operators and use them with the Money class out of
-the box.
-
-```php
-$operator = new MyOwnMoneyOperator();
-$newMoney = $money->with($operator);
-```
-
-Remember, MoneyOperators, will do something to the Money object and return a new
-instance.
-
-## Queries
-
-Queries are used to answer questions about the Money. They can return different
-values based on what you want.
-
-You can also create and use your own money queries.
-
-```php
-$query = new DummyQuery();
-$result = $money->query($query);
 ```
 
 ## Need Help?
