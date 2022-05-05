@@ -38,14 +38,20 @@ extra:
 markdown_extensions:
     - admonition
     - meta
-    - pymdownx.highlight
+    - pymdownx.highlight:
+        anchor_linenums: true
     - pymdownx.inlinehilite
+    - pymdownx.snippets
     - pymdownx.superfences
 
 
 nav:
     - Home:
         - index.md
+        - Reporting Issues: reporting-issues.md
+        - Contributing: contributing.md
+        - Getting Help: getting-help.md
+        - Code of Conduct: code-of-conduct.md
     - Components:
         - components/index.md
         - Clock: components/clock/index.md

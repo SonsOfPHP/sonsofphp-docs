@@ -5,6 +5,9 @@ title: Home
 <div align="center">
   <img src="https://raw.githubusercontent.com/SonsOfPHP/.github/main/assets/top-rocker.png" />
 </div>
+<hr>
+
+# Welcome to the Sons of PHP
 
 ## Reporting Issues
 
