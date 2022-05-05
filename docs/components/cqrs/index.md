@@ -16,6 +16,7 @@ You can create commands pretty easy by just extending the
 `AbstractCommandMessage` class.
 
 ```php
+<?php
 use SonsOfPHP\Component\Cqrs\Command\AbstractCommandMessage;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -31,6 +32,7 @@ final class ExampleCommand extends AbstractCommandMessage
 To use the command, you just create a new instance of the command.
 
 ```php
+<?php
 // Your options are defined in the command. It will only allow the options
 // that you configure and using the OptionsResolver, you can ensure the options
 // passed in are what needs to be passed in.
@@ -41,6 +43,7 @@ $command = new ExampleCommand($options);
 ### Queries
 
 ```php
+<?php
 use SonsOfPHP\Component\Cqrs\Query\QueryInterface;
 
 final class ExampleQuery implements QueryInterface
