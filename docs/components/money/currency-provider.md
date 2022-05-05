@@ -8,6 +8,7 @@ a `query` method to pass in `CurrencyProviderQuery`s to return various results.
 ## Usage
 
 ```php
+<?php
 use SonsOfPHP\Component\Money\CurrencyProvider;
 
 $provider = new CurrencyProvider();

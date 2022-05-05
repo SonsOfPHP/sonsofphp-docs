@@ -16,6 +16,7 @@ composer require sonsofphp/money
 ### Money
 
 ```php
+<?php
 use SonsOfPHP\Component\Money\Money;
 use SonsOfPHP\Component\Money\Currency;
 
@@ -30,6 +31,7 @@ $money = Money::USD(100);
 You can add and subtract different amounts to create new money.
 
 ```php
+<?php
 use SonsOfPHP\Component\Money\Money;
 
 $money = Money::USD(100);
@@ -44,6 +46,7 @@ $amount = $money->getAmount(); // Amount is 100
 You can multiple and divide too.
 
 ```php
+<?php
 use SonsOfPHP\Component\Money\Money;
 
 $money = Money::USD(100);
@@ -56,7 +59,9 @@ $amount = $money->getAmount(); // Amount is 100
 ```
 
 ### Currency
+
 ```php
+<?php
 use SonsOfPHP\Component\Money\Currency;
 
 $currency = new Currency('USD');

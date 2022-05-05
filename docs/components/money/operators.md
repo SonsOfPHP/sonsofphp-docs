@@ -10,6 +10,7 @@ You can create your own Money Operators and use them with the Money class out of
 the box.
 
 ```php
+<?php
 $operator = new MyOwnMoneyOperator();
 $newMoney = $money->with($operator);
 ```
