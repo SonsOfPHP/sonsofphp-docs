@@ -13,7 +13,9 @@ composer require sonsofphp/json
 ## Usage
 
 ### Json
+
 ``` php
+<?php
 use SonsOfPHP\Component\Json\Json;
 
 // You use this as a drop-in replacement for json_encode and json_decode
@@ -30,6 +32,7 @@ $decoder = $json->getDecoder();
 ### JsonEncoder
 
 ``` php
+<?php
 use SonsOfPHP\Component\Json\JsonEncoder;
 
 $encoder = new JsonEncoder();
@@ -59,6 +62,7 @@ $json = (new JsonEncoder())
 ### JsonDecoder
 
 ``` php
+<?php
 use SonsOfPHP\Component\Json\JsonDecoder;
 
 $decoder = new JsonDecoder();
