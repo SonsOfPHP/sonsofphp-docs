@@ -65,3 +65,4 @@ nav:
             - Currency Provider: components/money/currency-provider.md
             - Operators: components/money/operators.md
             - Queries: components/money/queries.md
+        - Version: components/version/index.md
