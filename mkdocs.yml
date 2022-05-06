@@ -40,6 +40,7 @@ markdown_extensions:
     - meta
     - pymdownx.highlight:
         anchor_linenums: true
+    - pymdownx.details
     - pymdownx.inlinehilite
     - pymdownx.snippets
     - pymdownx.superfences
@@ -57,7 +58,11 @@ nav:
         - Clock: components/clock/index.md
         - CQRS: components/cqrs/index.md
         - Event Dispatcher: components/event-dispatcher/index.md
-        - Event Sourcing: components/event-sourcing/index.md
+        - Event Sourcing:
+            - components/event-sourcing/index.md
+            - Event Messages:
+                - components/event-sourcing/event-messages/index.md
+                - 'Using the Generic Event Message': components/event-sourcing/event-messages/generic-event-message.md
         - Feature Toggle: components/feature-toggle/index.md
         - JSON: components/json/index.md
         - Money:
