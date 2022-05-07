@@ -2,6 +2,8 @@
 title: Money
 ---
 
+# Money Component
+
 The Money component was inspired by JSR 354 along with a few other ideas. It is
 mainly used for services and sites dealing with money.
 
@@ -22,13 +24,14 @@ use SonsOfPHP\Component\Money\Currency;
 
 // Can use the Money Class like this
 $money = new Money(100, new Currency('USD'));
-$amount = $money->getAmount(); // 100
+$amount = $money->getAmount(); // AmountInterface
+$value = $amount->toString(); // `toInt` and `toFloat` are also supported
 
 // Or like this
 $money = Money::USD(100);
 ```
 
-You can add and subtract different amounts to create new money.
+You can preform different [operations](operators.md) to create new money.
 
 ```php
 <?php
@@ -51,11 +54,11 @@ use SonsOfPHP\Component\Money\Money;
 
 $money = Money::USD(100);
 
-$newMoney1 = $money->multiply(5); // Amount is now 500
-$newMoney2 = $money->divide(5); // Amount is now 20
+$newMoney1 = $money->multiply(5); // value of Amount is now 500
+$newMoney2 = $money->divide(5); // value of Amount is now 20
 
 // The amount of the orginal Money does not change
-$amount = $money->getAmount(); // Amount is 100
+$amount = $money->getAmount(); // value of Amount is 100
 ```
 
 ### Currency

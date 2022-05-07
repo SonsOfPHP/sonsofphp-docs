@@ -67,7 +67,7 @@ nav:
         - JSON: components/json/index.md
         - Money:
             - components/money/index.md
-            - Currency Provider: components/money/currency-provider.md
+            - Currency Providers: components/money/currency-providers.md
             - Operators: components/money/operators.md
             - Queries: components/money/queries.md
         - Version: components/version/index.md
