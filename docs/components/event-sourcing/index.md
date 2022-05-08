@@ -2,6 +2,8 @@
 title: Event Sourcing - Overview
 ---
 
+# Event Sourcing
+
 ## Installation
 
 ```shell

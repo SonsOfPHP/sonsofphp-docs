@@ -60,6 +60,8 @@ nav:
         - Event Dispatcher: components/event-dispatcher/index.md
         - Event Sourcing:
             - components/event-sourcing/index.md
+            - Aggregates:
+                - components/event-sourcing/aggregates/index.md
             - Event Messages:
                 - components/event-sourcing/event-messages/index.md
                 - 'Using the Generic Event Message': components/event-sourcing/event-messages/generic-event-message.md

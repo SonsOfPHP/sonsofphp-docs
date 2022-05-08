@@ -1,5 +1,5 @@
 ---
-title: Event Messages - Event Sourcing
+title: Event Messages
 ---
 
 # Event Messages

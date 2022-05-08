@@ -2,9 +2,9 @@
 title: Generic Event Message - Event Sourcing
 ---
 
-# Using the Generic Event Message
+# Using the Serializable Event Message
 
-The `AbstractGenericMessage` allows you to quickly create Event Messages that
+The `AbstractSerializableMessage` allows you to quickly create Event Messages that
 are dispatched.
 
 ## Usage
@@ -15,9 +15,9 @@ First you will need to create your Event Message Class.
 
 ``` php
 <?php
-use SonsOfPHP\Component\EventSourcing\Message\AbstractGenericMessage;
+use SonsOfPHP\Component\EventSourcing\Message\AbstractSerializableMessage;
 
-class AggregateFieldChangedEventMessage extends AbstractGenericMessage
+class AggregateFieldChangedEventMessage extends AbstractSerializableMessage
 {
 }
 ```
