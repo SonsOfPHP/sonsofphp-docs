@@ -6,9 +6,9 @@ title: Queries
 
 ```php
 <?php
-use SonsOfPHP\Component\Cqrs\Query\QueryInterface;
+use SonsOfPHP\Component\Cqrs\Query\QueryMessageInterface;
 
-final class ExampleQuery implements QueryInterface
+final class ExampleQuery implements QueryMessageInterface
 {
     private $arg;
 
