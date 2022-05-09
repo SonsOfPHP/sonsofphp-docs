@@ -56,7 +56,12 @@ nav:
     - Components:
         - components/index.md
         - Clock: components/clock/index.md
-        - CQRS: components/cqrs/index.md
+        - CQRS:
+            - components/cqrs/index.md
+            - Commands: components/cqrs/commands.md
+            - Command Handlers: components/cqrs/command-handlers.md
+            - Queries: components/cqrs/queries.md
+            - Query Handlers: components/cqrs/query-handlers.md
         - Event Dispatcher: components/event-dispatcher/index.md
         - Event Sourcing:
             - components/event-sourcing/index.md
