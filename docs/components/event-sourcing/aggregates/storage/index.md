@@ -27,6 +27,9 @@ $repository = new AggregateRepository(
 // @var AggregateInterface|null $aggregate
 $aggregate = $repository->find($aggregateId);
 
+// You can also pass in a string as the $aggregateId
+$aggregate = $repository->find('unique-id');
+
 // To save an aggregate
 $repository->persist($aggregate);
 ```
