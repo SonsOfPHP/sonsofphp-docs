@@ -44,7 +44,7 @@ markdown_extensions:
     - pymdownx.inlinehilite
     - pymdownx.snippets
     - pymdownx.superfences
-
+    - pymdownx.emoji
 
 nav:
     - Home:
@@ -53,6 +53,7 @@ nav:
         - Contributing: contributing.md
         - Getting Help: getting-help.md
         - Code of Conduct: code-of-conduct.md
+        - Security Policy: security.md
     - Components:
         - components/index.md
         - Clock: components/clock/index.md

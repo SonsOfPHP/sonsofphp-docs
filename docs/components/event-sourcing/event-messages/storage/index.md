@@ -9,9 +9,6 @@ to be stored. This is usually a database but could be anywhere. The [Aggregate
 Repository](../../aggregates/storage/index.md) uses the Message Repository to save the event messages that were
 raised.
 
-??? tip "Best Practice"
-    Best Practice is to store the event data in JSON format.
-
 ## Usage
 
 ```php
@@ -48,15 +45,19 @@ $messageRepository = new InMemoryRepository();
 
 ## DoctrineDbalMessageRepository
 
+!!! attention
+    The `DoctrineDbalMessageRepository` requires the
+    `sonsofphp/event-sourcing-doctrine` package.
+
 The `DoctrineDbalMessageRepository` allows you to persist event messages in the
 database.
 
 ```php
 <?php
-use SonsOfPHP\Component\EventSourcing\Message\Repository\DoctrineDbalMessageRepository;
+use SonsOfPHP\Component\EventSourcing\Bridge\Doctrine\DoctrineDbalMessageRepository;
+use SonsOfPHP\Component\EventSourcing\Bridge\Doctrine\TableSchemaInterface;
 use Doctrine\DBAL\Connection;
 use SonsOfPHP\Component\EventSourcing\Message\Serializer\MessageSerializerInterface;
-use SonsOfPHP\Component\EventSourcing\Message\Repository\TableSchema\TableSchemaInterface;
 
 $messageRepository = new DoctrineDbalMessageRepository(
     $connection, // @var Connection

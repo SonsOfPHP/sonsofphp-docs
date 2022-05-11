@@ -10,4 +10,8 @@ title: Components Overview
 # Components
 
 Sons of PHP creates and maintains various Components. Components are reusable
-libraries.
+libraries. With the Components, we try to have as few dependencies as possible.
+If additional functionality is needed, the dependencies are broken out into
+specific packages.
+
+If you are having issues, please see [Reporting Issues](../reporting-issues.md)
