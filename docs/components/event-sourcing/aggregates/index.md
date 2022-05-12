@@ -43,6 +43,30 @@ final class UserId extends AbstractAggregateId
 }
 ```
 
+#### Auto Generate Aggregate IDs
+
+!!! attention
+    This requires the installation of the `sonsofphp/event-sourcing-symfony` package.
+
+Creating your own implementation to generate UUIDs or other type of IDs can be a
+pain in the ass. Once the `sonsofphp/event-sourcing-symfony` package is
+installed, you can easily use Symfony's Uid Component to generate UUIDs for you.
+
+```php
+<?php
+use SonsOfPHP\Component\EventSourcing\Bridge\Symfony\AggregateId;
+use Symfony\Component\Uid\Uuid;
+use Symfony\Component\Uid\Ulid;
+
+$id = new AggregateId();
+
+Uuid::isValid($id->toString()); // true
+
+// It also still supports setting the ID via the constructor
+$ulid = new AggregateId((string) new Ulid());
+```
+
+
 ## Aggregate Version
 
 An Aggregate also has a version. Each event that is raised will increase the
