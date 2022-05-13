@@ -29,9 +29,13 @@ If you would like to help with documentation, please use the dedicated
 Please visit the [Sons of PHP Organization Discussions][discussions] section to
 ask questions and get more help.
 
+## Hanging Out
+
+Drop by the [Discord Server][discord].
 
 [discussions]: https://github.com/orgs/SonsOfPHP/discussions
 [mother-repo]: https://github.com/SonsOfPHP/sonsofphp
 [pull-requests]: https://github.com/SonsOfPHP/sonsofphp/pulls
 [issues]: https://github.com/SonsOfPHP/sonsofphp/issues
 [docs-repo]: https://github.com/SonsOfPHP/sonsofphp-docs
+[discord]: https://discord.gg/sdVxNhFqND

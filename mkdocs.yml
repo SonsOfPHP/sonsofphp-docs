@@ -33,7 +33,8 @@ extra:
     social:
         - icon: fontawesome/brands/github
           link: https://github.com/SonsOfPHP
-          name: Sons of PHP on GitHub
+        - icon: fontawesome/brands/discord
+          link: https://discord.gg/sdVxNhFqND
 
 markdown_extensions:
     - admonition
