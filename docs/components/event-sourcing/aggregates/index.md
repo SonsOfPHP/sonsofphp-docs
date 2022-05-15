@@ -106,6 +106,17 @@ final class UserAggregate extends AbstractAggregate
 Using the `AbstractAggregate` class takes care of all the heavy lifting. This
 allows you to focus on the different methods.
 
+```php
+<?php
+use SonsOfPHP\Component\EventSourcing\Aggregate\AggregateId;
+
+// Creating a new aggregate can be done by passing either a string
+$userAggregate = new UserAggregate('unique-id');
+
+// Or an object that implements `AggregateIdInterface`
+$userAggregate = new UserAggregate(new AggregateId('unique-id'));
+```
+
 ## Working with Event Messages
 
 When you create an [Event Message](../event-messages/index.md) you will need to
