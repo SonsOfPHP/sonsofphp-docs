@@ -54,7 +54,7 @@ installed, you can easily use Symfony's Uid Component to generate UUIDs for you.
 
 ```php
 <?php
-use SonsOfPHP\Component\EventSourcing\Bridge\Symfony\AggregateId;
+use SonsOfPHP\Bridge\Symfony\EventSourcing\AggregateId;
 use Symfony\Component\Uid\Uuid;
 use Symfony\Component\Uid\Ulid;
 

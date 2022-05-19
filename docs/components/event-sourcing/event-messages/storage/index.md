@@ -54,8 +54,8 @@ database.
 
 ```php
 <?php
-use SonsOfPHP\Component\EventSourcing\Bridge\Doctrine\DoctrineDbalMessageRepository;
-use SonsOfPHP\Component\EventSourcing\Bridge\Doctrine\TableSchemaInterface;
+use SonsOfPHP\Bridge\Doctrine\EventSourcing\DoctrineDbalMessageRepository;
+use SonsOfPHP\Bridge\Doctrine\EventSourcing\TableSchemaInterface;
 use Doctrine\DBAL\Connection;
 use SonsOfPHP\Component\EventSourcing\Message\Serializer\MessageSerializerInterface;
 
